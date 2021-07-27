@@ -12,7 +12,7 @@ export const charactersDataError = (errorMessage) => ({
   payload: errorMessage,
 });
 
-export const getCharacters = () => (dispatch) => {
+export const getCharactersData = () => (dispatch) => {
   dispatch(loadingCharactersData());
   axios
     .get(`${RICK_AND_MORTY_API_URL}`)

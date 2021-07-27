@@ -4,12 +4,10 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import charactersReducer from './reducers/characters';
 
-const middlewares = [thunk];
-
 const reducer = combineReducers({
-  charactersReducer,
+  characters: charactersReducer,
 });
 
-const store = createStore(reducer, composeWithDevTools(applyMiddleware(...middlewares)));
+const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 
 export default store;
