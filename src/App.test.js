@@ -1,6 +1,11 @@
-import { render } from '@testing-library/react';
-import App from './App';
+import { render } from "@testing-library/react";
+import App from "./App";
+import ReduxProvider from "./helpers/ReduxProvider";
 
-test('renders learn react link', () => {
-  render(<App />);
+test("render the App component", () => {
+  render(
+    <ReduxProvider>
+      <App />
+    </ReduxProvider>
+  );
 });

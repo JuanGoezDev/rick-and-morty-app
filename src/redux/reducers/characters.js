@@ -18,6 +18,7 @@ const charactersReducer = (state = INITIAL_STATE, action) => {
         ...state,
         isLoading: false,
         characters: action.payload,
+        errorMessage: undefined
       };
     case charactersActionTypes.CHARACTERS_DATA_ERROR:
       return {
