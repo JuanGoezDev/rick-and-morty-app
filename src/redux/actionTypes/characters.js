@@ -1,0 +1,7 @@
+const charactersActionTypes = {
+  LOADING_CHARACTERS_DATA: "LOADING_CHARACTERS_DATA",
+  GET_CHARACTERS_DATA: "GET_CHARACTERS_DATA",
+  CHARACTERS_DATA_ERROR: "CHARACTERS_DATA_ERROR",
+};
+
+export default charactersActionTypes;
